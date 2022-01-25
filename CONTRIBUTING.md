@@ -10,6 +10,7 @@ Documentation on how to run this project locally and add more components.
   - [SCSS](#scss)
   - [JavaScript](#javascript)
 - [Linting and Formatting](#linting-and-formatting)
+- [Dependency Cruiser](#dependency-cruiser)
 - [Pull request guidance](#pull-request-guidance)
 - [Publishing to npm](#publishing-to-npm)
 
@@ -332,6 +333,22 @@ Pre-commit is required on all developers' machines to ensure coding standards ar
    ```
 
 1. Next time you make a commit, `pre-commit` will run its course.
+
+## Dependency Cruiser
+
+Requires dependency-cruiser (npm) and graphviz (brew) installed globally.
+
+Components:
+
+```
+depcruise --config  --output-type dot storybook/stories/components | dot -T svg > dependencygraph-components.svg
+```
+
+Src:
+
+```
+depcruise --config  --output-type dot src | dot -T svg > dependencygraph-src.svg
+```
 
 ## Pull request guidance
 

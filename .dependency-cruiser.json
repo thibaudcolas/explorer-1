@@ -1,0 +1,8 @@
+{
+  "options": {
+    "includeOnly": ["src", "storybook/stories/components"],
+    "exclude": {
+      "path": [".parcel", "node_modules", "stories.js$"]
+    }
+  }
+}
